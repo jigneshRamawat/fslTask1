@@ -1,65 +1,74 @@
-export const questions = [
+ export const questions = [
     {
-        questions: "Which is the smallest continent in the world?",
+        q: "Which is the smallest continent in the world?",
         answers: [
-            { text: "Asia", correct: false },
-            { text: "Australia", correct: true },
-            { text: "Africa", correct: false },
-            { text: "Europe", correct: false },
-        ]
+            { text: "Asia" },
+            { text: "Australia" },
+            { text: "Africa" },
+            { text: "Europe" },
+        ],
+        correct: "Australia"
     },
     {
-        questions: "Which is the largest desert in the world?",
+        q: "Which is the largest desert in the world?",
         answers: [
-            { text: "Sahara", correct: false },
-            { text: "Gobi", correct: false },
-            { text: "Antarctica", correct: true },
-            { text: "Kalahari", correct: false },
-        ]
+            { text: "Sahara" },
+            { text: "Gobi" },
+            { text: "Antarctica" },
+            { text: "Kalahari" },
+        ],
+          correct: "Australia"
+
     },
     {
-        questions: "Which planet is known as the Red Planet?",
+        q: "Which planet is known as the Red Planet?",
         answers: [
-            { text: "Venus", correct: false },
-            { text: "Mars", correct: true },
-            { text: "Jupiter", correct: false },
-            { text: "Saturn", correct: false },
-        ]
+            { text: "Venus" },
+            { text: "Mars" },
+            { text: "Jupiter" },
+            { text: "Saturn" },
+        ],
+          correct: "Australia"
     },
     {
-        questions: "What is the capital city of France?",
+        q: "What is the capital city of France?",
         answers: [
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Rome", correct: false },
-        ]
+            { text: "Berlin" },
+            { text: "Madrid" },
+            { text: "Paris" },
+            { text: "Rome" },
+        ],
+          correct: "Australia"
+
     },
     {
-        questions: "Which is the fastest land animal?",
+        q: "Which is the fastest land animal?",
         answers: [
-            { text: "Cheetah", correct: true },
-            { text: "Lion", correct: false },
-            { text: "Horse", correct: false },
-            { text: "Leopard", correct: false },
-        ]
+            { text: "Cheetah" },
+            { text: "Lion" },
+            { text: "Horse" },
+            { text: "Leopard" },
+        ],
+          correct: "Australia"
     },
     {
-        questions: "What is the hardest natural substance on Earth?",
+        q: "What is the hardest natural substance on Earth?",
         answers: [
-            { text: "Gold", correct: false },
-            { text: "Iron", correct: false },
-            { text: "Diamond", correct: true },
-            { text: "Platinum", correct: false },
-        ]
+            { text: "Gold" },
+            { text: "Iron" },
+            { text: "Diamond" },
+            { text: "Platinum" },
+        ],
+          correct: "Australia"
     },
     {
-        questions: "How many continents are there on Earth?",
+        q: "How many continents are there on Earth?",
         answers: [
-            { text: "5", correct: false },
-            { text: "6", correct: false },
-            { text: "7", correct: true },
-            { text: "8", correct: false },
-        ]
+            { text: "5" },
+            { text: "6" },
+            { text: "7" },
+            { text: "8" },
+        ],
+          correct: "Australia"
     }
 ];

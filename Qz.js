@@ -7,28 +7,27 @@ const questionsElemetn =  document.querySelector(".question");
 const optionElemetn =  document.querySelector(".option");
 const nextbtnElement  =  document.querySelector(".nextbtn");
 
-let cruentIndex = 0 ;
+let  currentIndex = 0 ;
 let score  = 0;
 
 function QuizStart(){
-    cruentIndex = 0 ;
+     currentIndex = 0 ;
     score = 0 ;
     nextbtnElement.innerHTML = "Next"
-    questions.sort(() => Math.random() - 0.5);
+    questions.sort(() => Math.random()* questions.length);
     ShowQustion();
 }
 
 function ShowQustion(){
     resetState()
-    let cruentQustion =  questions[cruentIndex];
-    let cruentQustionNumber = cruentIndex + 1;
-    questionsElemetn.innerHTML = cruentQustionNumber + ". " +  cruentQustion.questions;
+    let  currentQuestion =  questions[ currentIndex];
+    let  currentQusetionNumber =  currentIndex + 1;
+    questionsElemetn.innerHTML =  currentQusetionNumber + ". " +   currentQuestion.q;
 
 
-    cruentQustion.answers.forEach((ans)=>{
+      currentQuestion.answers.forEach((ans)=>{
         const bt = document.createElement("button");
         bt.innerHTML = ans.text;
-        console.log(bt.innerHTML);
         bt.classList.add("btn");
         optionElemetn.appendChild(bt);
 
@@ -80,8 +79,8 @@ function showScore(){
 }
 
 function handleNext(){
-    cruentIndex++;
-    if(cruentIndex < questions.length){
+     currentIndex++;
+    if( currentIndex < questions.length){
         ShowQustion();
     }
     else{
@@ -90,7 +89,7 @@ function handleNext(){
 }
 
 nextbtnElement.addEventListener("click", ()=>{
-    if(cruentIndex < questions.length){
+    if( currentIndex < questions.length){
         handleNext();
     }else{
         QuizStart();
